@@ -7,13 +7,14 @@ import {
   Feather,
   Octicons,
   MaterialCommunityIcons,
+  Foundation,
 } from "@expo/vector-icons";
 
 const index = () => {
   return (
     <ScrollView>
       <LinearGradient colors={["#7F7FD5", "#E9E4F0"]} style={{ flex: 1 }}>
-        <View style={{ padding: 12 }}>
+        <View style={{ padding: 16 }}>
           <View
             style={{
               flexDirection: "row",
@@ -283,15 +284,132 @@ const index = () => {
               </View>
             </Pressable>
           </View>
-          <View>
-            <View>
-              <View>
+          <View
+            style={{
+              marginTop: 20,
+              flexDirection: "row",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: 12,
+            }}
+          >
+            <View
+              style={{
+                backgroundColor: "#f79d00",
+                borderRadius: 6,
+                padding: 12,
+                alignItems: "center",
+                justifyContent: "center",
+                flex: 1,
+                gap: 5,
+              }}
+            >
+              <View
+                style={{
+                  width: 35,
+                  height: 35,
+                  borderRadius: 7,
+                  backgroundColor: "white",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
                 <MaterialCommunityIcons
                   name="guy-fawkes-mask"
                   size={24}
                   color="black"
                 />
               </View>
+              <Text>Attendance Criteria</Text>
+            </View>
+            <View
+              style={{
+                backgroundColor: "#abcaba",
+                borderRadius: 6,
+                padding: 12,
+                alignItems: "center",
+                justifyContent: "center",
+                flex: 1,
+                gap: 5,
+              }}
+            >
+              <View
+                style={{
+                  width: 35,
+                  height: 35,
+                  borderRadius: 7,
+                  backgroundColor: "white",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Foundation name="graph-bar" size={24} color="black" />
+              </View>
+              <Text>Increased Workflow</Text>
+            </View>
+          </View>
+          <View
+            style={{
+              marginTop: 20,
+              flexDirection: "row",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: 12,
+            }}
+          >
+            <View
+              style={{
+                backgroundColor: "#d3cce3",
+                borderRadius: 6,
+                padding: 12,
+                alignItems: "center",
+                justifyContent: "center",
+                flex: 1,
+                gap: 5,
+              }}
+            >
+              <View
+                style={{
+                  width: 35,
+                  height: 35,
+                  borderRadius: 7,
+                  backgroundColor: "white",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <MaterialCommunityIcons
+                  name="guy-fawkes-mask"
+                  size={24}
+                  color="black"
+                />
+              </View>
+              <Text>Cost Savings</Text>
+            </View>
+            <View
+              style={{
+                backgroundColor: "#bdc3c7",
+                borderRadius: 6,
+                padding: 12,
+                alignItems: "center",
+                justifyContent: "center",
+                flex: 1,
+                gap: 5,
+              }}
+            >
+              <View
+                style={{
+                  width: 35,
+                  height: 35,
+                  borderRadius: 7,
+                  backgroundColor: "white",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Foundation name="graph-bar" size={24} color="black" />
+              </View>
+              <Text>Employee Performance</Text>
             </View>
           </View>
         </View>
