@@ -9,6 +9,13 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-app.listen(port,()=>{
-    console.log(`🚀 Live at http://localhost:${port}`);
-})
+mongoose
+  .connect(
+    "mongodb+srv://givan:givan@employees.yof4mmm.mongodb.net/?retryWrites=true&w=majority"
+  )
+  .then((res) => console.log("💽 Database is Connected Successfully"))
+  .catch((err) => console.log("Please Restart Server", err));
+
+app.listen(port, () => {
+  console.log(`🚀 Live at http://localhost:${port}`);
+});

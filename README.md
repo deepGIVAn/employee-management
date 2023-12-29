@@ -8,4 +8,6 @@ run this and keep this device, with your same wifi also in your phone App : 'Exp
 
 https://docs.expo.dev/router/introduction/
 
-// rnefs
+https://docs.expo.dev/versions/latest/sdk/linear-gradient/
+
+// rnfes -> snippet with stylesheet
